@@ -18,6 +18,7 @@ app.use(
       "http://localhost:3000",
       "http://localhost:5173",
       "https://mern-bookstore-frontend-k9vb3t2nw-matthews-projects-18007ecb.vercel.app",
+      "https://mern-bookstore-frontend-one.vercel.app",
     ],
     credentials: true,
   })
