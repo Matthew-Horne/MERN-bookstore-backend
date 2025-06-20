@@ -1,14 +1,19 @@
+// Third-party imports
+import cors from "cors";
 import dotenv from "dotenv";
-dotenv.config();
 import express from "express";
 import mongoose from "mongoose";
-import cors from "cors";
+
+// Local application imports
+import adminRoutes from "./stats/admin.stats";
 import bookRoutes from "./books/book.route";
 import orderRoutes from "./orders/order.route";
 import userRoutes from "./users/user.route";
-import adminRoutes from "./stats/admin.stats";
-const app = express();
+
+dotenv.config();
+
 const port = process.env.PORT || 5000;
+const app = express();
 
 //middleware
 app.use(express.json());
